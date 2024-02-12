@@ -1,3 +1,5 @@
 FROM ollama/ollama
 
-RUN ollama serve & sleep 1 && ollama pull orca-mini
+ARG model
+
+RUN ollama serve & sleep 1 && ollama pull $model
