@@ -1,4 +1,4 @@
-FROM ollama/ollama
+FROM --platform=$TARGETPLATFORM ollama/ollama
 
 ARG model
 
